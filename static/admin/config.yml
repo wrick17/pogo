@@ -9,26 +9,35 @@ collections:
     label: Food
     folder: blogs/food
     create: true
+    delete: true
+    extension: md
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: category, label: Category }
       - { name: body, label: Body, widget: markdown }
   - name: fashion
     label: Fashion
     folder: blogs/fashion
     create: true
+    delete: true
+    extension: md
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: category, label: Category }
       - { name: body, label: Body, widget: markdown }
   - name: code
     label: Code
     folder: blogs/code
     create: true
+    delete: true
+    extension: md
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: category, label: Category }
       - { name: body, label: Body, widget: markdown }
