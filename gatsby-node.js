@@ -13,7 +13,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       ) {
         edges {
           node {
-            excerpt(pruneLength: 250)
             html
             id
             frontmatter {
@@ -28,11 +27,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     }
   `)
     .then(result => {
-      console.log(result);
       if (result.errors) {
         return Promise.reject(result.errors);
       }
-
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.frontmatter.path,
