@@ -13,8 +13,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       ) {
         edges {
           node {
+            excerpt(pruneLength: 250)
+            html
+            id
             frontmatter {
+              date
               path
+              title
             }
           }
         }
@@ -30,7 +35,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         createPage({
           path: node.frontmatter.path,
           component: blogPostTemplate,
-          context: {}, // additional data can be passed via context
+          context: {},
         });
       });
     });
