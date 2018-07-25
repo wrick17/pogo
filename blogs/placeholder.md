@@ -4,4 +4,6 @@ date: '2018-07-25'
 title: hello
 description: food
 ---
+![](/static/assets/images.png)
+
 # Hello
