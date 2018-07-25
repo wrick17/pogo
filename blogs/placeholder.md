@@ -1,7 +1,9 @@
 ---
 path: /blog/hello
 date: '2018-07-25'
-title: hello
+title: Hello
 category: food
 ---
-# Hello
+![hello](/static/assets/images.png)
+
+# Hello Folks
