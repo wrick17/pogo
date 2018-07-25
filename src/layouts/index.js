@@ -15,6 +15,7 @@ const Layout = ({ children, data }) => (
       ]}
     >
       <html lang="en" />
+      <link rel="icon" href="/assets/icon.png" />
     </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
     <div
