@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const IndexPage = (props) => {
-  console.log(props);
   return (
     <div>
       <h1>Hi people</h1>
