@@ -14,12 +14,22 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: category, label: Category, widget: relation, collection: tags, searchFields: ['label'], valueField: value, displayFields: ['label'] }
       - { name: body, label: Body, widget: markdown }
+    editor:
+      preview: false
   - name: tags
     label: Tags
     label_singular: tag
     folder: tags
     create: true
+    preview: false
     fields:
+      - { name: path, label: Path }
       - { name: value, label: Value }
       - { name: label, label: Label }
+    editor:
+      preview: false
+
+publish_mode: editorial_workflow
+  
