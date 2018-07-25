@@ -30,6 +30,4 @@ collections:
       - { name: label, label: Label }
     editor:
       preview: false
-
-publish_mode: editorial_workflow
   
