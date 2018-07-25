@@ -27,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/tags`,
-        name: "tags",
+        path: `${__dirname}/categories`,
+        name: "categories",
       },
     },
     `gatsby-transformer-remark`,
