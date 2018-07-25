@@ -14,14 +14,14 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: category, label: Category, widget: relation, collection: tags, searchFields: ['label'], valueField: value, displayFields: ['label'] }
+      - { name: category, label: Category, widget: relation, collection: categories, searchFields: ['label'], valueField: value, displayFields: ['label'] }
       - { name: body, label: Body, widget: markdown }
     editor:
       preview: false
-  - name: tags
-    label: Tags
-    label_singular: tag
-    folder: tags
+  - name: categories
+    label: Categories
+    label_singular: category
+    folder: categories
     create: true
     preview: false
     fields:
