@@ -30,4 +30,4 @@ collections:
       - { name: label, label: Label }
     editor:
       preview: false
-  public_folder: "/assets"
+public_folder: "/assets"
