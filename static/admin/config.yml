@@ -5,39 +5,21 @@ backend:
 media_folder: static/assets
 
 collections:
-  - name: food
-    label: Food
-    folder: blogs/food
+  - name: blogs
+    label: Blogs
+    label_singular: Blog
+    folder: blogs
     create: true
-    delete: true
-    extension: md
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: category, label: Category }
       - { name: body, label: Body, widget: markdown }
-  - name: fashion
-    label: Fashion
-    folder: blogs/fashion
+  - name: tags
+    label: Tags
+    label_singular: tag
+    folder: tags
     create: true
-    delete: true
-    extension: md
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: category, label: Category }
-      - { name: body, label: Body, widget: markdown }
-  - name: code
-    label: Code
-    folder: blogs/code
-    create: true
-    delete: true
-    extension: md
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: category, label: Category }
-      - { name: body, label: Body, widget: markdown }
+      - { name: value, label: Value }
+      - { name: label, label: Label }
