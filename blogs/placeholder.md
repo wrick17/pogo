@@ -6,4 +6,4 @@ category: food
 ---
 # Hello Folks
 
-![](/assets/comics-151341_960_720.png)
+![Hello](/assets/comics-151341_960_720.png)
